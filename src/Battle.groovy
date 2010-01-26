@@ -1,16 +1,17 @@
 class Battle {
 	
+	def shotResult
+	
 	def setShootAtPosition(Position position) {
-		println "--> ${position.position}"
+		shotResult = Game.board.shootAt(position)
 	}
 	
 	def shipHit() {
-		ShotResult.MISS
+		shotResult
 	}
 }
 
-class Position {
-	
+class Position {	
 	def position
 } 
 
