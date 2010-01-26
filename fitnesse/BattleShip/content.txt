@@ -1,0 +1,7 @@
+!define TEST_SYSTEM {slim}
+
+!path /Library/groovy-1.7.0/embeddable/groovy-all-1.7.0.jar
+!path /Developer/fitnesse/fitnesse.jar
+!path /Users/berndschiffer/projekte/battleship/classes
+
+!contents -R2 -g -p -f -h
