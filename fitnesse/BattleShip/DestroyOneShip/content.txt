@@ -4,3 +4,11 @@
 |2| |X| | |
 |3| |X| | |
 |4| | | | |
+
+|Battle|
+|shoot at position|ship hit?|
+|A1|missed|
+|B1|hit|
+|B2|hit|
+|B3|hit and sunk|
+|B3|think again, buddy!|

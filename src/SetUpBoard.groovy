@@ -1,6 +1,6 @@
 class SetUpBoard{
 	
-	List doTable(List<List<String>> table) {
+	def doTable(List<List<String>> table) {
 		
 	}
 }
