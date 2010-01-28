@@ -1,4 +1,11 @@
-@Immutable class Position {	
+@Immutable 
+class Position {	
+
+	static {
+		Position.metaClass.static.propertyMissing = { property ->
+			Position.position(property)
+		}
+	}
 	
 	String column
 	String row

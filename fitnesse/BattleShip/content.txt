@@ -1,4 +1,4 @@
-!include BattleShip.ClassPath
+#!include BattleShip.ClassPath
 
 !define TEST_SYSTEM {slim}
 
