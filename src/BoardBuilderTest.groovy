@@ -1,8 +1,9 @@
 import static Position.*
 import org.junit.*
-import org.gmock.WithGMock
+//import org.gmock.WithGMock
+import groovy.mock.interceptor.*
 
-@WithGMock
+//@WithGMock
 class BoardBuilderTest{
 	
 	@Test void buildsAnEmptyBoard() {
@@ -24,11 +25,20 @@ class BoardBuilderTest{
 		assert Ship.NONE == board.shipAt(Position.A1)
 	}
 	
-	@Test void aGMockTest() {
+	//@Test 
+	void aGMockTest() {
 		def mockBoard = mock() 
 		mockBoard.shipAt(Position.A1).returns Ship.NONE
 		play {
 			assert Ship.NONE == mockBoard.shipAt(Position.A1)
+		}
+	}
+
+	@Test void aMockForTest() {
+		def boardMocker = new MockFor(Board)
+		boardMocker.demand.shipAt {position -> Ship.NONE} 
+		boardMocker.use {
+			assert Ship.NONE == new Board().shipAt(Position.A1)
 		}
 	}
 
