@@ -1,0 +1,11 @@
+|Table:Set up enemy fleet|
+|#|A|B|C|
+|1| |X| |
+|2| |X| |
+|3| | | |
+
+|Battle|
+|shoot at position|ship hit?|
+|A1|missed|
+|B1|hit|
+|B2|hit and sunk|

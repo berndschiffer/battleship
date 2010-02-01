@@ -1,3 +1,3 @@
-!path /usr/local/groovy/embeddable/groovy-all-1.7.0.jar
+!path /Library/groovy-1.7.0/embeddable/groovy-all-1.7.0.jar
 !path /Developer/fitnesse/fitnesse.jar
-!path /Users/link/Documents/git-projects/battleship/classes
+!path /Users/berndschiffer/projekte/battleship/classes2
