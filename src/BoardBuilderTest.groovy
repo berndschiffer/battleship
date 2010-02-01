@@ -1,6 +1,8 @@
 import static Position.*
 import org.junit.*
+import org.gmock.WithGMock
 
+@WithGMock
 class BoardBuilderTest{
 	
 	@Test void buildsAnEmptyBoard() {
@@ -20,6 +22,14 @@ class BoardBuilderTest{
 		def board = builder.build()		
 		assert Ship.ofSize(1) == board.shipAt(Position.B1)
 		assert Ship.NONE == board.shipAt(Position.A1)
+	}
+	
+	@Test void aGMockTest() {
+		def mockBoard = mock() 
+		mockBoard.shipAt(Position.A1).returns Ship.NONE
+		play {
+			assert Ship.NONE == mockBoard.shipAt(Position.A1)
+		}
 	}
 
 }

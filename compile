@@ -1,3 +1,3 @@
 #!/bin/bash
 rm -r classes/*
-groovyc --classpath /Developer/fitnesse/fitnesse.jar -d classes src/*.groovy
+groovyc --classpath /Developer/fitnesse/fitnesse.jar:./libs/gmock-0.8.0.jar -d classes src/*.groovy
